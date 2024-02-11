@@ -7,18 +7,23 @@ const large = new Array(10).fill('nemo');  //create an array that has nemo 100 t
 //i is the index of array
 
 function findNemo(array){
-  let t0 = performance.now();  //check how much time application take to run
+
   for(let i = 0;i < array.length;i++){
     if(array[i]==='nemo')
     console.log('FOUND NEMO!');
   }
 
-let t1 = performance.now();
-console.log('Call to find Nemo took ' + (t1-t0) + ' milliseconds');
+
 }
 
 //run the function
-findNemo(large);
+findNemo(large); //0(n)--> Linear Time  n=10(size of input)
 
+const boxes = [0,1,2,3,4,5];
+function logFirstTwoBoxes(boxes){
+  console.log(boxes[0]); //0(1)
+  console.log(boxes[1]);  //0(1)
+}
 
+logFirstTwoBoxes(boxes); //0(2)-->no of operations are 2
 
