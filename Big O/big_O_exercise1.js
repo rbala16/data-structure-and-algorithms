@@ -13,4 +13,4 @@ function funChallenge(input) {
 
 funChallenge();
 
-//BIG 0 3 + 4n
+//BIG 0 = 3 + 4n
